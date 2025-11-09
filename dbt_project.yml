@@ -34,8 +34,11 @@ models:
     jaffle_shop:
       +materialized: view
 
+    stripe:
+      +materialized: view
+
     marts:
-      +materialized: table
+        +materialized: table
 
 vars:
   delete_from_database: { target.database }
