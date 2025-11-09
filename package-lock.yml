@@ -1,0 +1,17 @@
+packages:
+  - name: fivetran_log
+    package: fivetran/fivetran_log
+    version: 0.7.4
+  - name: dbt_utils
+    package: dbt-labs/dbt_utils
+    version: 1.1.1
+  - name: codegen
+    package: dbt-labs/codegen
+    version: 0.10.0
+  - name: fivetran_utils
+    package: fivetran/fivetran_utils
+    version: 0.4.10
+  - name: spark_utils
+    package: dbt-labs/spark_utils
+    version: 0.3.0
+sha1_hash: db60d7ef390f34076e3d389165ef8c029a64c99f
