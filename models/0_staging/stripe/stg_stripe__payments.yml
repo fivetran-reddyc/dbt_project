@@ -1,11 +1,15 @@
 models:
   - name: stg_stripe__payments
+    description: This model filters and selects successful payment transactions from the Stripe source, providing key details such as payment ID, order ID, and the transaction amount. It is used to analyze successful payments and their associated orders.
     columns:
       - name: payment_id
+        description: A unique identifier for each successful payment transaction.
         data_tests:
           - unique
           - not_null
       - name: order_id
+        description: The identifier for the order associated with the payment.
         data_tests:
           - not_null
       - name: amount
+        description: The monetary value of the successful payment transaction.
