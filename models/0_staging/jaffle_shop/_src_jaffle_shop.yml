@@ -1,0 +1,26 @@
+sources:
+  - name: jaffle_shop
+    description: A clone of a postgres app database.
+    tables:
+      - name: customers
+        description: Raw customer data
+        columns:
+          - name: id
+            description: This is the customer id primary key from customer table
+            data_tests:
+              - unique
+              - not_null
+      - name: orders
+        description: Raw orders data
+        columns:
+          - name: id
+            description: This is the order id primary key from orders data
+            data_tests:
+              - unique
+              - not_null
+              
+
+  - name: stripe
+    tables:
+      - name: payments
+
